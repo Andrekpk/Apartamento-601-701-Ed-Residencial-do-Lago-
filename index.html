@@ -3,82 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apartamento à Venda | [BAIRRO] - [CIDADE/UF] | [XX]m²</title>
-    <meta name="description" content="Apartamento de [XX]m² com [X] quartos à venda em [BAIRRO], [CIDADE]. Venda direta com o proprietário. Agende sua visita!">
+    <title>Apartamento à Venda | Alvorada - Francisco Beltrão - PR | 82m²</title>
+    <meta name="description" content="Apartamento de 82m² com 3 quartos no bairro Alvorada, Francisco Beltrão - PR. R$ 1.700.000. Venda direta.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Playfair+Display:wght@700&amp;display=swap');
-        
-        :root {
-            --accent: #059669;
-        }
-        
-        body {
-            font-family: 'Inter', system_ui, sans-serif;
-        }
-        
-        .heading-serif {
-            font-family: 'Playfair Display', Georgia, serif;
-        }
-
-        .hero-bg {
-            background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.55)), url('https://picsum.photos/id/1015/2000/1200');
-            background-size: cover;
-            background-position: center;
-        }
-
-        .section-title {
-            position: relative;
-            display: inline-block;
-        }
-        
-        .section-title:after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            width: 60px;
-            height: 3px;
-            background-color: #059669;
-            border-radius: 3px;
-        }
-
-        .property-card {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-
-        .property-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
-        }
-
-        .gallery-img {
-            transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        
-        .gallery-img:hover {
-            transform: scale(1.03);
-            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-        }
-
-        .nav-active {
-            color: #059669;
-            font-weight: 600;
-        }
-
-        .stat-number {
-            font-variant-numeric: tabular-nums;
-        }
-
-        .whatsapp-float {
-            animation: pulse 2s infinite;
-        }
-
-        .modal {
-            animation: fadeInScale 0.2s ease forwards;
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700&display=swap');
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .heading-serif { font-family: 'Playfair Display', Georgia, serif; }
+        .hero-bg { background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
+        .section-title:after { content: ''; position: absolute; bottom: -8px; left: 0; width: 60px; height: 3px; background-color: #059669; border-radius: 3px; }
+        .gallery-img { transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1); cursor: pointer; }
+        .gallery-img:hover { transform: scale(1.03); }
+        .whatsapp-float { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
     </style>
 </head>
 <body class="bg-zinc-50 text-zinc-800">
@@ -88,27 +26,14 @@
         <div class="max-w-screen-xl mx-auto px-6">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center gap-x-3">
-                    <div class="w-9 h-9 bg-emerald-600 rounded-xl flex items-center justify-center">
-                        <i class="fa-solid fa-home text-white text-xl"></i>
-                    </div>
-                    <div>
-                        <span class="font-semibold text-xl tracking-tight">Apartamento à Venda</span>
-                    </div>
+                    <div class="w-9 h-9 bg-emerald-600 rounded-xl flex items-center justify-center"><i class="fa-solid fa-home text-white text-xl"></i></div>
+                    <span class="font-semibold text-xl tracking-tight">Apartamento à Venda</span>
                 </div>
-                
                 <div class="hidden md:flex items-center gap-x-8 text-sm font-medium">
-                    <a href="#sobre" class="hover:text-emerald-600 transition-colors">Sobre o imóvel</a>
+                    <a href="#sobre" class="hover:text-emerald-600 transition-colors">Sobre</a>
                     <a href="#galeria" class="hover:text-emerald-600 transition-colors">Galeria</a>
                     <a href="#localizacao" class="hover:text-emerald-600 transition-colors">Localização</a>
-                </div>
-                
-                <div>
-                    <a href="https://wa.me/5546999999999?text=Olá!%20Vi%20o%20site%20do%20apartamento%20à%20venda%20e%20tenho%20interesse.%20Pode%20me%20passar%20mais%20informações%3F" 
-                       target="_blank"
-                       class="hidden md:inline-flex items-center gap-x-2 bg-emerald-600 hover:bg-emerald-700 transition-colors text-white px-5 py-2.5 rounded-2xl text-sm font-semibold">
-                        <i class="fa-brands fa-whatsapp"></i>
-                        <span>Falar no WhatsApp</span>
-                    </a>
+                    <a href="#contato" class="hover:text-emerald-600 transition-colors">Contato</a>
                 </div>
             </div>
         </div>
@@ -119,141 +44,43 @@
         <div class="max-w-screen-xl mx-auto px-6 text-white">
             <div class="max-w-2xl">
                 <div class="inline-flex items-center gap-x-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-3xl mb-6 text-sm font-medium">
-                    <div class="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
-                    <span>VENDA DIRETA COM O PROPRIETÁRIO</span>
+                    VENDA DIRETA • ALVORADA
                 </div>
-                
-                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-4 heading-serif">
-                    Apartamento de <span class="text-emerald-400">[82]</span>m²<br>
-                    à venda
-                </h1>
-                
-                <p class="text-2xl md:text-3xl text-white/90 tracking-tight mb-8">
-                    [BAIRRO], [CIDADE] - [UF]
-                </p>
-                
+                <h1 class="text-6xl md:text-7xl font-bold tracking-tighter leading-none mb-4 heading-serif">Apartamento de <span class="text-emerald-400">82m²</span> à venda</h1>
+                <p class="text-3xl text-white/90 tracking-tight mb-8">Bairro Alvorada, Francisco Beltrão - PR</p>
                 <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/5546999999999?text=Olá!%20Vi%20o%20site%20do%20apartamento%20à%20venda%20e%20tenho%20interesse.%20Pode%20me%20passar%20mais%20informações%3F" 
-                       target="_blank"
-                       class="inline-flex items-center justify-center gap-x-3 bg-white text-emerald-700 hover:bg-zinc-100 transition-all px-8 py-4 rounded-3xl font-semibold text-lg shadow-xl">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        <span>Agendar visita pelo WhatsApp</span>
+                    <a href="https://wa.me/5546988168338?text=Olá!%20Vi%20o%20apartamento%20no%20bairro%20Alvorada%20e%20tenho%20interesse." target="_blank" class="inline-flex items-center justify-center gap-x-3 bg-white text-emerald-700 hover:bg-zinc-100 transition-all px-8 py-4 rounded-3xl font-semibold text-lg shadow-xl">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Proprietário
                     </a>
-                    
-                    <a href="#galeria" 
-                       class="inline-flex items-center justify-center gap-x-2 border border-white/70 hover:bg-white/10 transition-all px-8 py-4 rounded-3xl font-semibold text-lg">
-                        Ver fotos
+                    <a href="https://wa.me/5546999848383?text=Olá%20Corretor%20Ademir,%20vi%20o%20apartamento%20no%20Alvorada%20e%20tenho%20interesse." target="_blank" class="inline-flex items-center justify-center gap-x-3 border border-white/70 hover:bg-white/10 transition-all px-8 py-4 rounded-3xl font-semibold text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Corretor Ademir
                     </a>
-                </div>
-                
-                <div class="mt-8 flex items-center gap-x-4 text-sm">
-                    <div class="flex -space-x-2">
-                        <div class="w-7 h-7 bg-white rounded-full border border-white overflow-hidden"><img src="https://picsum.photos/id/1005/28/28" class="w-full h-full object-cover"></div>
-                        <div class="w-7 h-7 bg-white rounded-full border border-white overflow-hidden"><img src="https://picsum.photos/id/1011/28/28" class="w-full h-full object-cover"></div>
-                    </div>
-                    <span class="text-white/80 text-sm">Várias pessoas visualizaram hoje</span>
                 </div>
             </div>
         </div>
-        
-        <!-- Preço no hero -->
-        <div class="absolute bottom-8 right-6 md:right-12 bg-white text-zinc-900 px-6 py-4 rounded-3xl shadow-2xl hidden md:block">
+        <div class="absolute bottom-8 right-6 md:right-12 bg-white text-zinc-900 px-6 py-4 rounded-3xl shadow-2xl">
             <div class="text-xs text-zinc-500 font-medium tracking-widest">PREÇO</div>
-            <div class="text-4xl font-bold tracking-tighter text-emerald-700">R$ [450.000]</div>
+            <div class="text-4xl font-bold tracking-tighter text-emerald-700">R$ 1.700.000</div>
         </div>
     </header>
 
-    <!-- STATS RÁPIDOS -->
+    <!-- STATS -->
     <div class="max-w-screen-xl mx-auto px-6 -mt-8 relative z-10">
         <div class="bg-white rounded-3xl shadow-xl border border-zinc-100 p-2 grid grid-cols-2 md:grid-cols-5 gap-2">
-            <div class="flex items-center gap-x-4 px-6 py-5">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-ruler-combined text-2xl"></i>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold tracking-tighter stat-number">[82]</div>
-                    <div class="text-sm text-zinc-500 -mt-1">metros quadrados</div>
-                </div>
-            </div>
-            
-            <div class="flex items-center gap-x-4 px-6 py-5 border-l border-zinc-100">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-bed text-2xl"></i>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold tracking-tighter stat-number">[3]</div>
-                    <div class="text-sm text-zinc-500 -mt-1">quartos</div>
-                </div>
-            </div>
-            
-            <div class="flex items-center gap-x-4 px-6 py-5 border-l border-zinc-100">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-bath text-2xl"></i>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold tracking-tighter stat-number">[2]</div>
-                    <div class="text-sm text-zinc-500 -mt-1">banheiros</div>
-                </div>
-            </div>
-            
-            <div class="flex items-center gap-x-4 px-6 py-5 border-l border-zinc-100">
-                <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center flex-shrink-0">
-                    <i class="fa-solid fa-car text-2xl"></i>
-                </div>
-                <div>
-                    <div class="text-3xl font-bold tracking-tighter stat-number">[1]</div>
-                    <div class="text-sm text-zinc-500 -mt-1">vaga de garagem</div>
-                </div>
-            </div>
-            
-            <div class="col-span-2 md:col-span-1 flex items-center justify-center bg-emerald-600 text-white rounded-2xl px-6 py-5 md:py-0">
-                <div class="text-center md:text-left">
-                    <div class="text-xs opacity-75 tracking-[2px]">PREÇO</div>
-                    <div class="text-3xl font-bold tracking-tighter">R$ [450.000]</div>
-                </div>
-            </div>
+            <div class="flex items-center gap-x-4 px-6 py-5"><div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-ruler-combined text-2xl"></i></div><div><div class="text-3xl font-bold">82</div><div class="text-sm text-zinc-500 -mt-1">m²</div></div></div>
+            <div class="flex items-center gap-x-4 px-6 py-5 border-l border-zinc-100"><div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-bed text-2xl"></i></div><div><div class="text-3xl font-bold">3</div><div class="text-sm text-zinc-500 -mt-1">quartos</div></div></div>
+            <div class="flex items-center gap-x-4 px-6 py-5 border-l border-zinc-100"><div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-bath text-2xl"></i></div><div><div class="text-3xl font-bold">2</div><div class="text-sm text-zinc-500 -mt-1">banheiros</div></div></div>
+            <div class="flex items-center gap-x-4 px-6 py-5 border-l border-zinc-100"><div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center"><i class="fa-solid fa-car text-2xl"></i></div><div><div class="text-3xl font-bold">1</div><div class="text-sm text-zinc-500 -mt-1">vaga</div></div></div>
+            <div class="col-span-2 md:col-span-1 flex items-center justify-center bg-emerald-600 text-white rounded-2xl px-6 py-5"><div><div class="text-xs opacity-75">PREÇO</div><div class="text-3xl font-bold">R$ 1.700.000</div></div></div>
         </div>
     </div>
 
-    <!-- SOBRE O IMÓVEL -->
+    <!-- SOBRE -->
     <section id="sobre" class="max-w-screen-xl mx-auto px-6 pt-16 pb-12">
         <div class="max-w-3xl">
             <h2 class="section-title text-4xl font-bold tracking-tighter mb-6">Sobre este apartamento</h2>
-            
             <div class="prose prose-zinc max-w-none text-lg text-zinc-600">
-                <p>[Escreva aqui uma descrição atrativa e honesta. Fale sobre a luminosidade, o estado de conservação, a planta, reformas realizadas, vista, vizinhança, etc. Exemplo:]</p>
-                <p>Apartamento bem localizado, com excelente insolação e ventilação natural. Planta funcional com living amplo integrado à varanda. Cozinha planejada, 3 quartos (sendo 1 suíte), 2 banheiros completos e 1 vaga na garagem. Prédio com porteiro 24h e ótima vizinhança.</p>
-            </div>
-            
-            <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-check text-emerald-600 mt-1.5"></i>
-                    <div>
-                        <div class="font-semibold">Varanda com vista para a cidade</div>
-                        <div class="text-sm text-zinc-500">Perfeita para relaxar</div>
-                    </div>
-                </div>
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-check text-emerald-600 mt-1.5"></i>
-                    <div>
-                        <div class="font-semibold">Cozinha planejada</div>
-                        <div class="text-sm text-zinc-500">Armários e eletrodomésticos</div>
-                    </div>
-                </div>
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-check text-emerald-600 mt-1.5"></i>
-                    <div>
-                        <div class="font-semibold">Prédio com segurança</div>
-                        <div class="text-sm text-zinc-500">Porteiro 24h + câmeras</div>
-                    </div>
-                </div>
-                <div class="flex gap-x-3">
-                    <i class="fa-solid fa-check text-emerald-600 mt-1.5"></i>
-                    <div>
-                        <div class="font-semibold">Próximo a comércios e escolas</div>
-                        <div class="text-sm text-zinc-500">Tudo a poucos minutos</div>
-                    </div>
-                </div>
+                <p>Escreva aqui a descrição completa do imóvel (reformas, vista, ano, diferenciais, etc.).</p>
             </div>
         </div>
     </section>
@@ -261,29 +88,13 @@
     <!-- GALERIA -->
     <section id="galeria" class="bg-white py-12 border-y border-zinc-100">
         <div class="max-w-screen-xl mx-auto px-6">
-            <div class="flex items-end justify-between mb-8">
-                <div>
-                    <h2 class="section-title text-4xl font-bold tracking-tighter">Galeria de fotos</h2>
-                    <p class="text-zinc-500 mt-1">Clique nas imagens para ampliar</p>
-                </div>
-                <a href="#localizacao" class="hidden md:block text-emerald-600 hover:text-emerald-700 font-medium flex items-center gap-x-2">
-                    Ver localização <i class="fa-solid fa-arrow-right"></i>
-                </a>
-            </div>
-            
+            <h2 class="section-title text-4xl font-bold tracking-tighter mb-8">Galeria de fotos</h2>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                <!-- Imagens da galeria - SUBSTITUA PELAS SUAS FOTOS -->
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/1015/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Sala de estar ampla e iluminada">
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/160/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Cozinha planejada">
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/201/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Quarto principal com suíte">
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/251/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Banheiro social moderno">
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/29/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Varanda com vista">
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/1005/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Fachada do prédio">
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/133/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Quarto secundário">
-                <img onclick="openModal(this.src)" src="https://picsum.photos/id/180/800/600" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Área de serviço">
+                <!-- Foto 1 (sua) -->
+                <img onclick="openModal(this.src)" src="https://drive.google.com/uc?id=1DglpprsWwkvFIgXDaSYBCJMq8PGm1j4o" class="gallery-img w-full aspect-[4/3] object-cover rounded-3xl" alt="Foto do apartamento">
+                <!-- Adicione as demais fotos aqui no mesmo formato -->
+                <!-- Exemplo: <img onclick="openModal(this.src)" src="https://drive.google.com/uc?id=OUTRO_ID" ... > -->
             </div>
-            
-            <p class="text-center text-xs text-zinc-400 mt-6">* Fotos ilustrativas. Substitua por fotos reais do seu apartamento (recomendo fotógrafo profissional)</p>
         </div>
     </section>
 
@@ -292,114 +103,60 @@
         <div class="grid md:grid-cols-5 gap-x-12 gap-y-10">
             <div class="md:col-span-2">
                 <h2 class="section-title text-4xl font-bold tracking-tighter mb-6">Localização privilegiada</h2>
-                
-                <div class="space-y-4 text-zinc-600">
-                    <p class="font-medium">[BAIRRO] é um dos bairros mais procurados de [CIDADE].</p>
-                    <ul class="space-y-2 text-sm">
-                        <li class="flex gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Próximo a supermercados, farmácias e padarias</span></li>
-                        <li class="flex gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Escolas e creches a menos de 1km</span></li>
-                        <li class="flex gap-x-2"><i class="fa-solid fa-check text-emerald-600 mt-1"></i> <span>Fácil acesso às principais vias da cidade</span></li>
-                    </ul>
-                </div>
+                <p class="text-zinc-600">Bairro Alvorada, Francisco Beltrão - PR.</p>
             </div>
-            
             <div class="md:col-span-3">
-                <!-- SUBSTITUA PELO IFRAME DO GOOGLE MAPS DO ENDEREÇO REAL -->
                 <div class="aspect-video bg-zinc-100 rounded-3xl overflow-hidden border border-zinc-200">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14400.5!2d-53.05!3d-26.08!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDA0JzQ4LjAiUyA1M8KwMDMnMDAuMCJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3583.6685662449813!2d-53.069894999999995!3d-26.077085999999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDA0JzM3LjUiUyA1M8KwMDQnMTEuNiJX!5e0!3m2!1spt-BR!2sbr!4v1782412526063!5m2!1spt-BR!2sbr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>
-                <p class="text-xs text-center text-zinc-400 mt-3">Substitua pelo mapa exato do endereço do apartamento</p>
             </div>
         </div>
     </section>
 
-    <!-- CTA FINAL -->
-    <section class="bg-emerald-700 py-16 text-white">
-        <div class="max-w-screen-xl mx-auto px-6 text-center">
-            <h2 class="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Gostou do que viu?</h2>
-            <p class="text-emerald-100 max-w-md mx-auto mb-8 text-lg">Entre em contato agora mesmo e agende uma visita sem compromisso.</p>
-            
-            <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="https://wa.me/5546999999999?text=Olá!%20Vi%20o%20site%20do%20apartamento%20à%20venda%20e%20tenho%20interesse.%20Pode%20me%20passar%20mais%20informações%3F" 
-                   target="_blank"
-                   class="inline-flex items-center justify-center gap-x-3 bg-white text-emerald-700 hover:bg-zinc-100 transition-all px-10 py-5 rounded-3xl font-bold text-xl shadow-xl">
-                    <i class="fa-brands fa-whatsapp text-3xl"></i>
-                    <span>Falar com o proprietário</span>
-                </a>
-            </div>
-            
-            <p class="mt-6 text-emerald-200 text-sm">Venda direta • Sem intermediários • Documentação em dia</p>
+    <!-- CONTATO -->
+    <section id="contato" class="max-w-screen-xl mx-auto px-6 py-16 bg-white">
+        <h2 class="section-title text-4xl font-bold tracking-tighter mb-8 text-center">Entre em contato</h2>
+        <div class="grid md:grid-cols-2 gap-8 max-w-md mx-auto">
+            <a href="https://wa.me/5546988168338?text=Olá!%20Vi%20o%20apartamento%20no%20bairro%20Alvorada%20e%20tenho%20interesse." target="_blank" class="flex items-center gap-x-4 p-6 border border-emerald-200 hover:border-emerald-600 rounded-3xl transition-colors">
+                <i class="fa-brands fa-whatsapp text-4xl text-emerald-600"></i>
+                <div><div class="font-semibold">Proprietário</div><div class="text-emerald-600">(46) 98816-8338</div></div>
+            </a>
+            <a href="https://wa.me/5546999848383?text=Olá%20Corretor%20Ademir,%20vi%20o%20apartamento%20no%20Alvorada%20e%20tenho%20interesse." target="_blank" class="flex items-center gap-x-4 p-6 border border-emerald-200 hover:border-emerald-600 rounded-3xl transition-colors">
+                <i class="fa-brands fa-whatsapp text-4xl text-emerald-600"></i>
+                <div><div class="font-semibold">Corretor Ademir</div><div class="text-emerald-600">(46) 99984-8383</div></div>
+            </a>
         </div>
     </section>
 
-    <footer class="bg-zinc-900 text-zinc-400 py-8 text-sm">
-        <div class="max-w-screen-xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-y-4 text-center md:text-left">
-            <div>
-                © 2026 • Venda direta pelo proprietário
-            </div>
-            <div class="text-xs">
-                As informações e fotos são de responsabilidade do proprietário. Visitas mediante agendamento.
-            </div>
-        </div>
+    <footer class="bg-zinc-900 text-zinc-400 py-8 text-sm text-center">
+        © 2026 • Venda direta • Francisco Beltrão - PR
     </footer>
 
-    <!-- BOTÃO FLUTUANTE WHATSAPP -->
-    <a href="https://wa.me/5546999999999?text=Olá!%20Vi%20o%20site%20do%20apartamento%20à%20venda%20e%20tenho%20interesse.%20Pode%20me%20passar%20mais%20informações%3F" 
-       target="_blank"
-       class="whatsapp-float fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl z-50 text-3xl">
+    <!-- Botão flutuante -->
+    <a href="https://wa.me/5546988168338?text=Olá!%20Vi%20o%20apartamento%20no%20bairro%20Alvorada%20e%20tenho%20interesse." target="_blank" class="whatsapp-float fixed bottom-6 right-6 bg-emerald-600 hover:bg-emerald-700 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl text-3xl z-50">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- MODAL DE IMAGEM -->
-    <div id="imageModal" onclick="closeModal()" class="hidden fixed inset-0 bg-black/90 z-[100] flex items-center justify-center p-4">
+    <!-- Modal -->
+    <div id="imageModal" onclick="if(event.target===this)closeModal()" class="hidden fixed inset-0 bg-black/90 z-[100] flex items-center justify-center p-4">
         <div onclick="event.stopImmediatePropagation()" class="relative max-w-5xl w-full">
-            <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-4xl hover:text-zinc-300 transition-colors">&times;</button>
-            <img id="modalImage" class="w-full max-h-[85vh] object-contain rounded-2xl" alt="Foto ampliada do apartamento">
+            <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-5xl hover:text-zinc-300">×</button>
+            <img id="modalImage" class="w-full max-h-[85vh] object-contain rounded-2xl" alt="">
         </div>
     </div>
 
     <script>
         function openModal(src) {
-            const modal = document.getElementById('imageModal');
-            const modalImg = document.getElementById('modalImage');
-            modalImg.src = src;
-            modal.classList.remove('hidden');
-            modal.classList.add('flex');
+            document.getElementById('modalImage').src = src;
+            document.getElementById('imageModal').classList.remove('hidden');
+            document.getElementById('imageModal').classList.add('flex');
         }
-        
         function closeModal() {
             const modal = document.getElementById('imageModal');
             modal.classList.remove('flex');
             modal.classList.add('hidden');
         }
-        
-        // Fechar modal com ESC
-        document.addEventListener('keydown', function(e) {
-            if (e.key === "Escape") {
-                const modal = document.getElementById('imageModal');
-                if (!modal.classList.contains('hidden')) {
-                    closeModal();
-                }
-            }
-        });
-        
-        // Tailwind script (caso precise de customização extra)
-        function initializeTailwind() {
-            // Já está inicializado via CDN
-        }
-        
-        // Inicialização
-        window.onload = function() {
-            initializeTailwind();
-            console.log('%c[Landing Page] Template carregado com sucesso. Substitua os placeholders.', 'color:#059669');
-        }
+        document.addEventListener('keydown', e => { if (e.key === "Escape") closeModal(); });
     </script>
 </body>
 </html>
